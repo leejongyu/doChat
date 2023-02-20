@@ -1,0 +1,12 @@
+1. userService가 계속해서 null이 되는 문제가 발생.
+  service class 자체에 문제가 있는줄 알고 repository와 service 클래스만 붙잡고 있었는데 계속해서 오류가 발생.
+  > 원인 : controller에 @RequiredArgsConstructor 애너테이션 누락
+  > 해결 : 애너테이션 추가
+  >> 어쩐지 Userservice 객체를 선언할 때, 'the blank final field userservice may not have been initialized' 오류가 발생해서 '뭐지?' 했었는데
+    생성자 주입이 안되어서 발생한 오류였다.
+    
+    @RequiredArgsConstructor : final이 붙거나 @NotNull 이 붙은 필드의 생성자를 자동 생성해주는 롬복 어노테이션.
+    
+ 
+ 2. 
+    
