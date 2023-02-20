@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+    layout:decorate="~{ /layout/layout }">
+<th:block layout:fragment="css">
+</th:block>
+<div layout:fragment="content" class="content">
+                    <a class="goChatBtn" th:href="@{ /chat?userName={userName} (userName = ${ #authentication.name }) }">채팅방 가기</a>     
+	</div>
+ 
+<script layout:fragment="script" th:inline="javascript"></script>
+<th:block layout:fragment="script">	
+	<!-- Jquery JS-->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="https://kit.fontawesome.com/df851af08f.js" crossorigin="anonymous"></script>
+    <script>
+    const userName = [[ ${ #authentication.name } ]];
+    </script>
+</th:block>
+
+
+</html>

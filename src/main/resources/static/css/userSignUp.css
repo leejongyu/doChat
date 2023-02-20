@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+.signUpHead {
+    margin : 20px;
+    padding : 20px;
+    font-size: 30px;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    border-bottom: 3px solid black;
+}
+
+.signUpPanel {
+    width: 1100px;
+    text-align: left;
+    padding: 50px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #f8f8f8;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.signUp.button {
+    text-align: center;
+}
+
+.inputs {
+    width: 550px;
+    height: 50px;
+    font-size: 30px;
+    margin-left:280px;
+}
+
+.divLabel {
+    font-size: 30px;
+    margin-left:280px;
+    padding: 20px;
+}
+
+
+.inputs#address {
+    width: 550px;
+    height: 50px;
+    font-size: 30px;
+    margin-left:280px;
+}
+
+.buttons {
+    padding: 10px;
+    font-size: 30px;
+    background-color: #FFD126;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    cursor: pointer;
+    margin-right: 110px;    
+    margin-left:280px;
+    width: 560px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#btnCreate {
+    padding: 10px;
+    font-size: 30px;
+    background-color: #FFD126;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    font-family: 'Do Hyeon', sans-serif;
+    cursor: pointer;
+    margin-right: 110px;
+    margin-left:280px;
+    width: 560px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.buttons:hover {
+    opacity: 0.5;
+}
+
+.selectOptions {
+    font-size: 15px;
+}
+
+.check {
+    padding: 10px 10px;
+    color: green;
+    text-align: center;
+}
+
+.err {
+    color: red;
+    padding: 10px 10px;
+    text-align: center;
+}

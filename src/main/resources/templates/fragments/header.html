@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="header">
+    <div style="background-color: dodgerblue;">
+        <h1>header.html</h1>
+        
+                    <a class="goChatBtn" th:href="@{ /chat?userName={userName} (userName = ${ #authentication.name }) }">채팅방 가기</a>     
+    </div>
+</div>
+</html>
