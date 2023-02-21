@@ -52,8 +52,17 @@
 
 <h4> 1. TCP/IP 소켓 프로그래밍 </H4>
   > TCP소켓, TCP/IP 소켓 : OSI 7 Layer(Open System Interconnection 7 Layer)의 네번째 계층인 TCP(Transport Control Protocol) 상에서 동작하는 소켓
+  > 데이터를 주고받기 위해서는 먼저 소켓의 연결 과정이 선행되어야 함 
+  > 이 과정에서의 연결 요청과 수신이 각각 클라이언트 소켓과 서버 소켓의 역할.
+  
 
-<h4> 1-1. 
+<h4> 1-1. 클라이언트 소켓과 서버 소켓 </h4>
+
+![image](https://user-images.githubusercontent.com/108982584/220259303-5b72ec22-c2be-42ff-b2d1-5344f6f1c91c.png)
+
+      * 두 개의 시스템 (또는 프로세스)이 소켓을 통해서 Connection 하기 위해서는 최초 어느 한 곳에서 대상이 되는 곳으로 연결을 요청해야함.
+      * IP주소와 포트번호로 식별되는 대상에게 자신이 데이터 송수신을 위한 네트워크 연결을 수립할 의사가 있을을 알리는 것.
+
 
 
 
