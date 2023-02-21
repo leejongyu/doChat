@@ -186,10 +186,12 @@
         - 서버와 클라이언트는 HTTP 1.1 프로토콜을 사용하여 요청과 응답을 보냄
 
 <h5> HandShake Request </h5> (ref : https://dev-gorany.tistory.com/212)
+
 ![스크린샷(43)](https://user-images.githubusercontent.com/108982584/220284691-425aa56f-8610-4d22-9148-47c861cc3d20.png)
 
 
 <h5> HandShake Response </h5> (ref : https://dev-gorany.tistory.com/212)
+
 ![스크린샷(44)](https://user-images.githubusercontent.com/108982584/220285352-71f1d178-a5fb-4137-bdb0-1664e92f5adb.png)
 
 
