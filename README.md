@@ -29,7 +29,8 @@
      * 단점 : 클라이언트로 보내는 이벤트들의 시간간격이 좁다면 Poling과 별 차이가 없음.
             : 다수의 클라이언트에게 동시에 이벤트가 발생될 경우 서버의 부담이 급증.
 
-             
+
+
     <h3>(3) HTTP Streaming</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220254015-4f86f0c8-8b9b-49c9-91fd-9a38166928a0.png)
