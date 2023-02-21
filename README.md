@@ -3,12 +3,12 @@
 * 네트워크를 통해 서버로부터 데이터를 가져오기 위한 통신 방식 2가지 : 
   (ref: https://blog.naver.com/jamsuham75/222337979985)
   
-  <h2>1) HTTP 통신 ?</h2>
+  <h2> 1) HTTP 통신 ? </h2>
     > 클라이언트 요청이 있을 때에만 서버가 응답하여 해당 정보를 전송하고 곧바로 연결을 종료하는 방식.
     > 단방향적 통신으로, 서버가 클라이언트 쪽으로 요청을 보낼 수 없음.
     > 주로 콘텐츠 위주의 데이터를 사용할 때 유용 (인터넷으로 주소를 검색하여 연결)
     
-   <h3>(1) HTTP Poling</h3>
+    <h3> (1) HTTP Poling </h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220249260-12d90d8d-8aca-44db-a6de-cfbbf46aac69.png)
     
@@ -18,7 +18,7 @@
             : HTTP Request Connection을 맺고 끊는 것 자체가 부답이 맣은 방식이고, 클라이언트에서 실시간 정도의 빠른 응답을 기대하기 어려움!
 
 
-   <h3>(2) HTTP Long Poling</h3>
+    <h3> (2) HTTP Long Poling </h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
@@ -31,7 +31,7 @@
 
 
 
-    <h3>(3) HTTP Streaming</h3>
+    <h3> (3) HTTP Streaming </h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220254015-4f86f0c8-8b9b-49c9-91fd-9a38166928a0.png)
 
@@ -39,7 +39,7 @@
                 : 클라이언트로 이벤트를 전달할 때, 해당 요청을 해제하지 않고 핋요한 메시지만 보냄(Flush)
       * 장점 : Long Poling과 비교하여 서버에 메세지를 보내지 않고도 다시 HTTP 연결을 하지 않아도 되어 부담이 줄어듬.
 
- <h2>2) Socket 통신 ?</h2>
+ <h2> 2) Socket 통신 ? </h2>
     > 서버와 클라이언트가 특정 port를 통해 연결하여 실시간 양방향 통신을 하는 방식.
     > HTTP 통신과 달리 Socket 통신은 서버 역시 클라이언트로 요청을 보낼 수 있고, 실시간으로 연결이 유지됨.
     > 실시간 스트리밍 혹은 채팅과 같은 즉각적인 양방향 정보 교환이 필요한 경우 많이 사용.
