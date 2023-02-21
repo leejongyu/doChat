@@ -34,17 +34,19 @@
 <h3>(3) HTTP Streaming</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220254015-4f86f0c8-8b9b-49c9-91fd-9a38166928a0.png)
-
+ 
       * 작동방식 : 클라이언트 -> 서버로 HTTP Request를 요청
                 : 클라이언트로 이벤트를 전달할 때, 해당 요청을 해제하지 않고 핋요한 메시지만 보냄(Flush)
       * 장점 : Long Poling과 비교하여 서버에 메세지를 보내지 않고도 다시 HTTP 연결을 하지 않아도 되어 부담이 줄어듬.
 
 <h2>2) Socket 통신 </h2>
 * Socket : 네트워크 환경에 연결할 수 있게 만들어진 연결부
-  ! TCP/IP 소켓 프로그래밍
-    > 1
-    > 2
-    > 3  
+![image](https://user-images.githubusercontent.com/108982584/220257796-23fd23ab-fbbb-4809-b78b-9ceab1a1c9fb.png)
+
+   *1
+   *2
+   *3
+   
 <h3>(1) Socket 통신이란? </h3>
   > 서버와 클라이언트가 특정 port를 통해 연결하여 실시간 양방향 통신을 하는 방식.</br>
   > HTTP 통신과 달리 Socket 통신은 서버 역시 클라이언트로 요청을 보낼 수 있고, 실시간으로 연결이 유지됨.<br/>
