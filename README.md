@@ -152,7 +152,7 @@
             - 이를 위해서 bind() 및 listen()을 통해 소켓에 포트 번호를 바인딩하고 요청 대기 큐를 생성하여 클라이언트의 요청을 대기
             - accept() API에서, 데이터 송수신을 위한 새로운 소켓(Socket)을 만들고 서버 소켓의 대기 큐에 쌓여있는 첫 번째 연결 요청을 매핑. 하나의 연결 요청 처리 종료.            
             - 이후에는 다른 연결 요청을 대기(listen) or 서버 소켓을 닫을(close()) 수 있음
-          * 실질적인 데이터 송수신은 accept API에서 생성된, 연결(Connection)이 수립(Established)된 소켓(Socket)을 통해 처리됩니다.
+          * 실질적인 데이터 송수신은 accept API에서 생성된, 연결(Connection)이 수립(Established)된 소켓(Socket)을 통해 처리.
           
         5. send()/recv() : [4]에서 생성된 소켓을 통해 연결이 수립되면 데이터를 주고 받음
         
@@ -160,9 +160,15 @@
 
 
 <h3>(2)  Web Socket ? </h3>
+  * 목적 : HTTP(Hyper Text Transfer Protocol)를 사용하는 네트워크 데이터 통신의 단점을 보완. <br/>
   > 기존의 단방향 HTTP 프로토콜과 호환되어 양방향 통신을 제공하기 위해 개발된 프로토콜.<br/>
   > 일반 Socket 통신과 달리 HTTP Port를 사용하므로 방화벽에 제약이 없으며 통상 WebSocket으로 불린다.<br/>
   > 접속까지는 HTTP 프로토콜을 이용. 그 이후 통신은 자체적인 Web Socket 프로토콜로 통신.<br/>
+
+![image](https://user-images.githubusercontent.com/108982584/220282016-d7badb17-29d5-43ec-ad53-e5d27c2b141a.png)
+
+      * WebSocket이 기존의 TCP Socket과 다른 점은 최초 접속이 일반 HTTP Request를 통해 HandShaking 과정을 통해 이뤄진다는 점.
+      * HTTP Request를 그대로 사용하기 때문에 기존의 80, 443 포트로 접속을 하므로 추가 방화벽을 열지 않고도 양방향 통신이 가능하고, HTTP 규격인 CORS 적용이나 인증 등 과정을 기존과 동일하게 가져갈 수 있는 것이 장점
 
 
 <h2> 개발노트 </h2>
