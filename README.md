@@ -10,6 +10,7 @@
     > 주로 콘텐츠 위주의 데이터를 사용할 때 유용 (인터넷으로 주소를 검색하여 연결)
     
     (1) HTTP Poling
+    
 ![image](https://user-images.githubusercontent.com/108982584/220249260-12d90d8d-8aca-44db-a6de-cfbbf46aac69.png)
     
      * 작동방식 : 클라이언트가 평범한 HTTP Request를 서버로 계속 요청해 이벤트 내용을 전달받는 방식.
@@ -20,6 +21,7 @@
 
 
     (2) HTTP Long Poling
+    
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
      * 작동방식 : 클라이언트에서 서버로 일단 HTTP Requet를 요청
