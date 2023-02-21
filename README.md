@@ -51,9 +51,10 @@
       * 실시간 스트리밍 혹은 채팅과 같은 즉각적인 양방향 정보 교환이 필요한 경우 많이 사용.
 
 <h4> 1. TCP/IP 소켓 프로그래밍 </H4>
-  > TCP소켓, TCP/IP 소켓 : OSI 7 Layer(Open System Interconnection 7 Layer)의 네번째 계층인 TCP(Transport Control Protocol) 상에서 동작하는 소켓
-  > 데이터를 주고받기 위해서는 먼저 소켓의 연결 과정이 선행되어야 함 
-  > 이 과정에서의 연결 요청과 수신이 각각 클라이언트 소켓과 서버 소켓의 역할.
+  > TCP소켓, TCP/IP 소켓 : OSI 7 Layer(Open System Interconnection 7 Layer)의 네번째 계층인 TCP(Transport Control Protocol) 상에서 동작하는 소켓<br/>
+  > 데이터를 주고받기 위해서는 먼저 소켓의 연결 과정이 선행되어야 함 <br/>
+  > 클라이언트 소켓: 연결 요청 <br/>
+  > 서버 소켓 : 수신 <br/>
   
 
 <h4> 1-1. 클라이언트 소켓과 서버 소켓 </h4>
