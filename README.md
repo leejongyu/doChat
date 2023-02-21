@@ -22,7 +22,7 @@
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
-     * 작동방식 : 클라이언트에서 서버로 일단 HTTP Requet를 요청
+     ! 작동방식 : 클라이언트에서 서버로 일단 HTTP Requet를 요청
                : 그 상태로 계속 대기하다가 서버에서 클라이언트로 전닳할 이벤트가 있다면 그 순간 Response 메시지를 전달하며 연결 종료
                : 곧 클라이언트가 다시 HTTP Request를 요청해 다음 이벤트를 기다리는 방식
               
@@ -40,6 +40,6 @@
 
 <h2> 개발노트 </h2>
 <h3>1차 : localhost에서 구현 (2023-02-20) (ref : https://dev-gorany.tistory.com/212)</h3>
-  * 문제점 : 모든 클라이언트의 브라우저에서 WebSocket을 지원한다는 보장이 없다.
+  ! 문제점 : 모든 클라이언트의 브라우저에서 WebSocket을 지원한다는 보장이 없다.
             또한, Server/Client 중간에 위치한 Proxy가 Upgrade헤더를 해석하지 못해 서버에 전달하지 못할 수 있다. 마지막으로
             Server/Client 중간에 위치한 Proxy가 유휴 상태에서 도중에 Connection 종료시킬 수도 있다.
