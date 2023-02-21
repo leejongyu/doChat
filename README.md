@@ -19,7 +19,7 @@
             : HTTP Request Connection을 맺고 끊는 것 자체가 부답이 맣은 방식이고, 클라이언트에서 실시간 정도의 빠른 응답을 기대하기 어려움!
 
 
-   <h3(2) HTTP Long Poling</h3>
+   <h3>(2) HTTP Long Poling</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
