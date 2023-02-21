@@ -41,7 +41,7 @@
 
 <h2>2) Socket 통신 </h2>
 
-<h3>(1) Socket 통신이란? </h3>
+<h3>(1) Socket 통신이란? </h3> (ref : https://recipes4dev.tistory.com/153)
 
 ![image](https://user-images.githubusercontent.com/108982584/220257796-23fd23ab-fbbb-4809-b78b-9ceab1a1c9fb.png)
 
@@ -50,8 +50,11 @@
       * HTTP 통신과 달리 Socket 통신은 서버 역시 클라이언트로 요청을 보낼 수 있고, 실시간으로 연결이 유지됨.
       * 실시간 스트리밍 혹은 채팅과 같은 즉각적인 양방향 정보 교환이 필요한 경우 많이 사용.
 
-<h4> TCP/IP 소켓 프로그래밍 </H4>
+<h4> 1. TCP/IP 소켓 프로그래밍 </H4>
   > TCP소켓, TCP/IP 소켓 : OSI 7 Layer(Open System Interconnection 7 Layer)의 네번째 계층인 TCP(Transport Control Protocol) 상에서 동작하는 소켓
+
+<h4> 1-1. 
+
 
 
 <h3>(2)  Web Socket ? </h3>
@@ -61,7 +64,7 @@
 
 
 <h2> 개발노트 </h2>
-<h3>1차 : localhost에서 구현 (2023-02-20) (ref : https://dev-gorany.tistory.com/212)</h3>
+<h3>1차 : localhost에서 구현 (2023-02-20)</h3> (ref : https://dev-gorany.tistory.com/212)
   ! 문제점 : 모든 클라이언트의 브라우저에서 WebSocket을 지원한다는 보장이 없다.
             또한, Server/Client 중간에 위치한 Proxy가 Upgrade헤더를 해석하지 못해 서버에 전달하지 못할 수 있다. 마지막으로
             Server/Client 중간에 위치한 Proxy가 유휴 상태에서 도중에 Connection 종료시킬 수도 있다.
