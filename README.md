@@ -8,7 +8,7 @@
     > 단방향적 통신으로, 서버가 클라이언트 쪽으로 요청을 보낼 수 없음.
     > 주로 콘텐츠 위주의 데이터를 사용할 때 유용 (인터넷으로 주소를 검색하여 연결)
     
-   <h3>(1) HTTP Poling</h3?
+   <h3>(1) HTTP Poling</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220249260-12d90d8d-8aca-44db-a6de-cfbbf46aac69.png)
     
@@ -28,7 +28,7 @@
      * 장점 : HTTP Poling 방식보다 서버의 부담이 줄어들 수 있음
      * 단점 : 클라이언트로 보내는 이벤트들의 시간간격이 좁다면 Poling과 별 차이가 없음.
             : 다수의 클라이언트에게 동시에 이벤트가 발생될 경우 서버의 부담이 급증.
-!
+
 
 
     <h3>(3) HTTP Streaming</h3>
