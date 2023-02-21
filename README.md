@@ -4,12 +4,12 @@
 * 네트워크를 통해 서버로부터 데이터를 가져오기 위한 통신 방식 2가지 : 
   (ref: https://blog.naver.com/jamsuham75/222337979985)
   
-  <h3>1) HTTP 통신 ?<h3>
+  <h2>1) HTTP 통신 ?</h2>
     > 클라이언트 요청이 있을 때에만 서버가 응답하여 해당 정보를 전송하고 곧바로 연결을 종료하는 방식.
     > 단방향적 통신으로, 서버가 클라이언트 쪽으로 요청을 보낼 수 없음.
     > 주로 콘텐츠 위주의 데이터를 사용할 때 유용 (인터넷으로 주소를 검색하여 연결)
     
-    (1) HTTP Poling
+   <h3>(1) HTTP Poling</h3?
     
 ![image](https://user-images.githubusercontent.com/108982584/220249260-12d90d8d-8aca-44db-a6de-cfbbf46aac69.png)
     
@@ -19,7 +19,7 @@
             : HTTP Request Connection을 맺고 끊는 것 자체가 부답이 맣은 방식이고, 클라이언트에서 실시간 정도의 빠른 응답을 기대하기 어려움!
 
 
-    (2) HTTP Long Poling
+   <h3(2) HTTP Long Poling</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
