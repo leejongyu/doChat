@@ -40,7 +40,6 @@
       * 장점 : Long Poling과 비교하여 서버에 메세지를 보내지 않고도 다시 HTTP 연결을 하지 않아도 되어 부담이 줄어듬.
 
 <h2>2) Socket 통신 </h2>
-* Socket : 네트워크 환경에 연결할 수 있게 만들어진 연결부
 ![image](https://user-images.githubusercontent.com/108982584/220257796-23fd23ab-fbbb-4809-b78b-9ceab1a1c9fb.png)
 
    *1
