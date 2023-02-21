@@ -19,7 +19,7 @@
             : HTTP Request Connection을 맺고 끊는 것 자체가 부답이 맣은 방식이고, 클라이언트에서 실시간 정도의 빠른 응답을 기대하기 어려움.
 
 
-!
+
     (2) HTTP Long Poling
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
@@ -28,7 +28,7 @@
                : 그 상태로 계속 대기하다가 서버에서 클라이언트로 전닳할 이벤트가 있다면 그 순간 Response 메시지를 전달하며 연결 종료
                : 곧 클라이언트가 다시 HTTP Request를 요청해 다음 이벤트를 기다리는 방식
                
-!
+
   2) Socket 통신 ?
     > 서버와 클라이언트가 특정 port를 통해 연결하여 실시간 양방향 통신을 하는 방식.
     > HTTP 통신과 달리 Socket 통신은 서버 역시 클라이언트로 요청을 보낼 수 있고, 실시간으로 연결이 유지됨.
