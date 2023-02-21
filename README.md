@@ -159,7 +159,7 @@
         6. close() : 데이터 송수신이 완료되면 소켓을 닫음
 
 
-<h3>(2)  Web Socket ? </h3>
+<h3>(2)  Web Socket ? </h3> (ref : https://dev-gorany.tistory.com/212)
   * 목적 : HTTP(Hyper Text Transfer Protocol)를 사용하는 네트워크 데이터 통신의 단점을 보완. <br/>
   > 기존의 단방향 HTTP 프로토콜과 호환되어 양방향 통신을 제공하기 위해 개발된 프로토콜.<br/>
   > 일반 Socket 통신과 달리 HTTP Port를 사용하므로 방화벽에 제약이 없으며 통상 WebSocket으로 불린다.<br/>
@@ -169,6 +169,23 @@
 
       * WebSocket이 기존의 TCP Socket과 다른 점은 최초 접속이 일반 HTTP Request를 통해 HandShaking 과정을 통해 이뤄진다는 점.
       * HTTP Request를 그대로 사용하기 때문에 기존의 80, 443 포트로 접속을 하므로 추가 방화벽을 열지 않고도 양방향 통신이 가능하고, HTTP 규격인 CORS 적용이나 인증 등 과정을 기존과 동일하게 가져갈 수 있는 것이 장점
+      * 변경 사항의 빈도가 자주 일어나지 않고, 데이터의 크기가 작은 경우
+       > Ajax, Streaming, Long polling 기술이 더 효과적일 수 있음.
+      * 실시간성을 보장해야 하고, 변경 사항의 빈도가 잦다면, 또는 짧은 대기 시간, 고주파수, 대용량의 조합인 경우
+       > WebSocket이 효과적일 수 있음.
+
+<h4> WebSocket 접속 과정 </h4>
+
+![image](https://user-images.githubusercontent.com/108982584/220282797-6d15d09d-fee1-4ac1-bb0b-11189f2440ab.png)
+
+      * TCP/IP 접속 그리고 웹소켓 열기 HandShake 과정으로 나눌 수 있음.
+      * 웹소켓도 TCP/IP위에서 동작하므로, 서버와 클라이언트는 웹소켓을 사용하기 전에 서로 TCP/IP 접속이 되어있어야 함
+      * TCP/IP 접속이 완료된 후 서버와 클라이언트는 웹소켓 열기 HandShake 과정을 시작
+       > 웹소켓 열기 (HandShake)
+        - 클라이언트가 먼저 핸드셰이크 요청을 보내고 이에 대한 응답을 서버가 클라이언트로 보내는 구조
+        - 서버와 클라이언트는 HTTP 1.1 프로토콜을 사용하여 요청과 응답을 보냄
+         
+![스크린샷(43)](https://user-images.githubusercontent.com/108982584/220284691-425aa56f-8610-4d22-9148-47c861cc3d20.png)
 
 
 <h2> 개발노트 </h2>
