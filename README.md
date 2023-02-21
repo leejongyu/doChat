@@ -22,10 +22,20 @@
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
-     ! 작동방식 : 클라이언트에서 서버로 일단 HTTP Requet를 요청
+     * 작동방식 : 클라이언트에서 서버로 일단 HTTP Requet를 요청
                : 그 상태로 계속 대기하다가 서버에서 클라이언트로 전닳할 이벤트가 있다면 그 순간 Response 메시지를 전달하며 연결 종료
                : 곧 클라이언트가 다시 HTTP Request를 요청해 다음 이벤트를 기다리는 방식
+     * 장점 : HTTP Poling 방식보다 서버의 부담이 줄어들 수 있음
+     * 단점 : 클라이언트로 보내는 이벤트들의 시간간격이 좁다면 Poling과 별 차이가 없음.
+            : 다수의 클라이언트에게 동시에 이벤트가 발생될 경우 서버의 부담이 급증.
               
+    <h3>(3) HTTP Streaming</h3>
+    
+![image](https://user-images.githubusercontent.com/108982584/220254015-4f86f0c8-8b9b-49c9-91fd-9a38166928a0.png)
+
+      * 작동방식 : 클라이언트 -> 서버로 HTTP Request를 요청
+                : 클라이언트로 이벤트를 전달할 때, 해당 요청을 해제하지 않고 핋요한 메시지만 보냄(Flush)
+      * 장점 : Long Poling과 비교하여 서버에 메세지를 보내지 않고도 다시 HTTP 연결을 하지 않아도 되어 부담이 줄어듬
 
  <h2>2) Socket 통신 ?</h2>
     > 서버와 클라이언트가 특정 port를 통해 연결하여 실시간 양방향 통신을 하는 방식.
