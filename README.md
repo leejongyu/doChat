@@ -8,7 +8,7 @@
     > 단방향적 통신으로, 서버가 클라이언트 쪽으로 요청을 보낼 수 없음.
     > 주로 콘텐츠 위주의 데이터를 사용할 때 유용 (인터넷으로 주소를 검색하여 연결)
     
-    <h3> (1) HTTP Poling </h3>
+<h3>(1) HTTP Poling</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220249260-12d90d8d-8aca-44db-a6de-cfbbf46aac69.png)
     
@@ -18,7 +18,7 @@
             : HTTP Request Connection을 맺고 끊는 것 자체가 부답이 맣은 방식이고, 클라이언트에서 실시간 정도의 빠른 응답을 기대하기 어려움!
 
 
-    <h3> (2) HTTP Long Poling </h3>
+<h3>(2) HTTP Long Poling</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220250725-01a970b2-e57b-4da5-bbc5-d22c488378c0.png)
 
@@ -31,7 +31,7 @@
 
 
 
-    <h3> (3) HTTP Streaming </h3>
+<h3>(3) HTTP Streaming</h3>
     
 ![image](https://user-images.githubusercontent.com/108982584/220254015-4f86f0c8-8b9b-49c9-91fd-9a38166928a0.png)
 
