@@ -34,6 +34,9 @@ public class WebSocketConfig implements WebSocketConfigurer {
 	@Override
 	public void registerWebSocketHandlers(WebSocketHandlerRegistry registry) {
 
-		registry.addHandler(chatHandler, "ws/chat").setAllowedOrigins("*");
+		registry.addHandler(chatHandler, "ws/chat").setAllowedOrigins("http://localhost:8888").withSockJS();
 	}
+	// .withSockJS() 추가;
+	// setAllowedOrigins()에서 '*' 을 사용(모두 허용)하게 되면 보안상의 문제가 발생할 수 있어서 직접 하나씩 지정해야 함
+
 }
