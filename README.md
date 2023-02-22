@@ -196,7 +196,7 @@
 
 
 <h2> 개발노트 </h2>
-<h3>1차 : localhost에서 구현 (2023-02-20)</h3> (ref : https://dev-gorany.tistory.com/212)
- * 문제점 : 모든 클라이언트의 브라우저에서 WebSocket을 지원한다는 보장이 없다.
-           또한, Server/Client 중간에 위치한 Proxy가 Upgrade헤더를 해석하지 못해 서버에 전달하지 못할 수 있다. 
-           마지막으로 Server/Client 중간에 위치한 Proxy가 유휴 상태에서 도중에 Connection 종료시킬 수도 있다.
+<h3>1차 : localhost에서 구현 (2023-02-20)</h3> (ref : https://dev-gorany.tistory.com/212) <br/>
+ * 문제점 : 모든 클라이언트의 브라우저에서 WebSocket을 지원한다는 보장이 없다. <br/>
+           또한, Server/Client 중간에 위치한 Proxy가 Upgrade헤더를 해석하지 못해 서버에 전달하지 못할 수 있다. <br/>
+           마지막으로 Server/Client 중간에 위치한 Proxy가 유휴 상태에서 도중에 Connection 종료시킬 수도 있다.<br/>
